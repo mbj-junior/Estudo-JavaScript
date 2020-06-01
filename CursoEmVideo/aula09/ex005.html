@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: rgba(255, 0, 200, 0.034);
+            color: rgb(6, 17, 114);
+            font:normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'> clique em mim</div>
+
+    <script>
+        //buscando um elemento por sua tag
+        let p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText + '</br>')
+        p1.style.color = 'red'
+        window.document.write('Esta escrito assim: '+window.navigator.appName)
+        window.alert(p1.innerText)
+
+        //buscando um elemento por seu ID
+        let d = window.document.getElementById('msg')
+        d.style.background = "teal"
+
+
+        
+    </script>
+
+</body>
+</html>
