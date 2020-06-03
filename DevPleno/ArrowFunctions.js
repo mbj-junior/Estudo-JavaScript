@@ -5,7 +5,7 @@ const func1 = function(param1){
 }
 
 //tem esse nome pela seta "=>"
-// ela tem instruções dentro dela mesma
+// ela tem instruções dentro dela
 //this está referenciando externamente
 const func11 = (param)=>{
 
