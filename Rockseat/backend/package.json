@@ -1,0 +1,23 @@
+{
+  "name": "semana11",
+  "version": "1.0.0",
+  "description": "Curso semanal da rocketseat",
+  "main": "helo.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbj-junior/rocketseat/tree/master/Semana11"
+  },
+  "author": "Márcio Botelho Junior",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

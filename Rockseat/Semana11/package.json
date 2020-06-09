@@ -1,0 +1,18 @@
+{
+  "name": "semana11",
+  "version": "1.0.0",
+  "description": "Curso semanal da rocketseat",
+  "main": "helo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbj-junior/rocketseat/tree/master/Semana11"
+  },
+  "author": "Márcio Botelho Junior",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
