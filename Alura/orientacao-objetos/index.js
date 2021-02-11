@@ -1,21 +1,25 @@
 class Cliente {
-  constructor() {
-    this.nome;
-    this.cpf;
-  }
+    nome;
+    cpf;
+  
 }
 
-class Saldo {
-  constructor() {
-    this.agencia;
-    this.saldo;
-  }
+class ContaCorrente {
+    agencia;
+    _saldo = 0;
+  
 
   sacar(valor) {
-    if (this.saldo >= valor) {
-      this.saldo -= valor;
+    if (this._saldo >= valor) {
+      this._saldo -= valor;
+      return valor;
     }
-    console.log(this.nome, "seu saldo é de ", this.saldo)
+    console.log(this.nome, "seu saldo é de ", this._saldo);
+  }
+
+  depositar(valor) {
+    if (valor <= 0) return;
+    this._saldo += valor;
   }
 }
 
@@ -28,5 +32,14 @@ cliente1.cpf = 11122233309;
 cliente2.nome = "Alicia";
 cliente2.cpf = 11122233309;
 
-console.log(cliente1);
-console.log(cliente2);
+const contaCorrenteRicardo = new ContaCorrente();
+contaCorrenteRicardo.agencia = 1001;
+
+contaCorrenteRicardo.depositar(-100);
+contaCorrenteRicardo.depositar(100);
+contaCorrenteRicardo.depositar(100);
+
+const valorSacado = contaCorrenteRicardo.sacar(50);
+console.log(valorSacado);
+
+console.log(contaCorrenteRicardo);
